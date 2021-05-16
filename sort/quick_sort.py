@@ -2,7 +2,7 @@ import os
 
 """
 Explanation from GeekForGeeks :
-Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. 
+QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. 
 There are many different versions of quickSort that pick pivot in different ways. 
 
     Always pick first element as pivot.
@@ -19,7 +19,7 @@ Average-performance: O(n log n)
 Worst-case performance: O(n^2)
 """
 
-
+#We take the last element as pivot
 def partition(array, low, high):
 
     i = (low - 1) #index of smaller element
@@ -52,7 +52,7 @@ if __name__ == '__main__':
 
     array = [4, 2, 17, 8, 1, 5, 7, 12, 21, 18]
 
-    print(quickSort(array, 0, len(array)-1 ))
+    sorted_array = quickSort(array, 0, len(array)-1 )
 
     #print(sorted_array)
-    print(array)
+    print(sorted_array)
